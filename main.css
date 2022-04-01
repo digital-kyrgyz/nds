@@ -1,0 +1,19 @@
+* {
+  font-family: "Museo Sans Cyrl";
+}
+.top-navbar {
+  width: 1920px;
+  height: 40px;
+  background: #333333;
+}
+.nds-office-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 120%;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #a9a9a9;
+  text-align: center;
+  padding: 20px;
+  border-right: 1px solid #717171;
+}

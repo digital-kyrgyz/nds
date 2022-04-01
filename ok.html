@@ -5,54 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Семантическая разметка в HTML5</title>
+    <style>
+      div {
+        margin: 10px;
+        border: 1px solid black;
+        font-size: 20px;
+        height: 80px;
+      }
+      #header {
+        background-color: #ccc;
+      }
+      #sidebar {
+        background-color: #bbb;
+        float: right;
+        width: 150px;
+      }
+      #main {
+        background-color: #fafafa;
+        height: 200px;
+        margin-right: 170px;
+      }
+      #content {
+        background-color:#eee;
+        margin-right: 180px;
+      }
+      #menu {
+        background-color: #ddd;
+        float: right;
+        width: 160px;
+      }
+      #footer {
+        background-color: #ccc;
+      }
+    </style>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="/">Главная</a></li>
-        <li><a href="/blog">Блог</a></li>
-        <li><a href="/contacts">Контакты</a></li>
-      </ul>
-    </nav>
-    <article>
-      <header>
-        <h2>Рассказ в двух частях</h2>
-      </header>
-      <nav>
-        <ul>
-          <li><a href="#part1">Часть 1</a></li>
-          <li><a href="#part2">Часть 2</a></li>
-        </ul>
-      </nav>
-      <div>
-        <section id="part1">
-          <h2>Часть 1</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
-            esse ea adipisci ratione facilis exercitationem amet impedit
-            corrupti non error sint enim deserunt beatae tempora saepe
-            provident, doloremque magni facere!
-          </p>
-        </section>
-        <section id="part2">
-            <h2>Часть 2</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
-              esse ea adipisci ratione facilis exercitationem amet impedit
-              corrupti non error sint enim deserunt beatae tempora saepe
-              provident, doloremque magni facere!
-            </p>
-          </section>
-      </div>
-      <footer>
-
-      </footer>
-    </article>
-    <footer>
-        <p><a href="#">Лицензионное соглашение</a></p>
-        <p><a href="#">О сайте</a></p>
-        <p><a href="#">Donations</a></p>
-        <p><a href="#">Copyright 2016 Eika</a></p>
-    </footer>
+    <div id="header">Шапка сайт</div>
+    <div id="sidebar">Правый сайдбар</div>
+    <div id="main">
+      <div id="menu">Меню</div>
+      <div id="content">Основное содержимое</div>
+    <div id="footer">Футер</div>
   </body>
 </html>
