@@ -1,0 +1,27 @@
+/*************************************************/
+* {
+  font-family: "Museo Sans Cyrl";
+}
+.top-navbar {
+  width: 1920px;
+  height: 40px;
+  background: #333333;
+  height: 40px;
+}
+.nav-top-logo {
+  font-weight: 300;
+  font-size: 12px;
+  color: #a9a9a9;
+}
+.nav-top-text {
+  color: #a9a9a9;
+}
+.world-globus-img {
+  width: 20px;
+  height: 20px;
+}
+.nav-text-list {
+  font-size: 14px;
+}
+/*.sub-navbar {
+} */
