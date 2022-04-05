@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <header>         
+        <nav class="navbar navbar-expand-sm navbar-light bg-dark box-shadow">
+            <div class="container">
+                <a class="navbar-brand text-light" asp-area="" asp-controller="Home" asp-action="Index">НДС-ОФИС ИНТЕРНЕТ-КОМПАНИИ</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav ml-auto flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index"><span><img src="/images/mail.svg" alt=""></span> sti@sti.gov.kg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy"><span><img src="/images/phone.svg" alt="">+996 312 123-456 / 116</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy"><span><img src="/images/globus.svg" alt=""></span>Русский</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+        </nav>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light border-bottom box-shadow">
+            <div class="container">
+                <a class="navbar-brand text-light" asp-area="" asp-controller="Home" asp-action="Index"><span class="text-dark"><img src="/images/gerb.svg">Государственная Налоговая Служба Кыргызской Республики</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand text-light" asp-area="" asp-controller="Home" asp-action="Index"><span><img src="/images/salym.svg"></span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav ml-auto flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy"><span><img src="/images/login.svg" alt=""></span></a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+        </nav>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light border-bottom box-shadow mb-3">
+            <div class="container">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Информация</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Подача заявлений</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Перечень интернет-компаний</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Часто задаваемые вопросы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container pb-3">
+                <h1>Заявление о постановке на учет</h1>
+                <p>Подать заявление о постановке на учет он-лайн</p>
+                <hr/>
+                <h2>Сведения об организации</h2>
+                <form>
+                    <div class="row">
+                         <div class="col-md-6">
+                            <div class="form-group">
+                                 <label for="inputsm">ИНН*</label>
+                                 <input class="form-control" type="text">
+                            </div>
+                           <div class="form-group">
+                                 <label for="inputdefault">Полное наименование организации (в русской транскрипции)* </label>
+                                 <textarea class="form-control" rows="3" id="comment"></textarea>
+                          </div>
+                          <div class="form-group">
+                                 <label for="inputlg">Полный адрес в стране регистрации (инкорпорации) (в русской транскрипции)*</label>
+                                 <textarea class="form-control" rows="3" id="comment"></textarea>
+                          </div>
+                          <div class="form-group">
+                                 <label for="inputdefault">Сайт организации в сети «Интернет»</label>
+                                 <input class="form-control" type="text">
+                          </div>
+                         </div>
+                         <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputsm">Страна регистрации (инкорпорации)* </label>
+                                <input class="form-control" type="text">
+                            </div>
+                           <div class="form-group">
+                                <label for="inputdefault">Полное наименование организации (в латинской транскрипции)*</label>
+                                <textarea class="form-control" rows="3" id="comment"></textarea>
+                           </div>
+                          <div class="form-group">
+                                <label for="inputlg">Полный адрес в стране регистрации (инкорпорации) (в латинской транскрипции)*</label>
+                                <textarea class="form-control" rows="3" id="comment"></textarea>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputdefault">Адрес электронной почты иностранной организации*</label>
+                            <input class="form-control" type="text">
+                     </div>
+                         </div>         
+                    </div>
+                    <h2>Другая информация</h2> 
+                    <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group">
+                                <label for="inputsm">Наименование торговой марки (товарного знака) иностранной организации (в русской транскрипции):</label>
+                                <textarea class="form-control" rows="2" id="comment"></textarea>
+                           </div>
+                          <div class="form-group">
+                                <label for="inputdefault">Регистрационный номер, присвоенный регистрирующим органом в стране регистрации (инкорпорации):*</label>
+                                <textarea class="form-control" rows="2" id="comment"></textarea>
+                         </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                               <label for="inputsm">Наименование торговой марки (товарного знака) иностранной организации (в латинской транскрипции):</label>
+                               <textarea class="form-control" rows="2" id="comment"></textarea>
+                           </div>
+                          <div class="form-group">
+                               <label for="inputdefault">Код налогоплательщика в стране регистрации (инкорпорации) или аналог:</label>
+                               <textarea class="form-control" rows="2" id="comment"></textarea>
+                          </div>
+                        </div>         
+                   </div>
+                   <h2>Сведения об оказываемых услугах</h2> 
+                    <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group">
+                                <label for="inputsm">Оказываемые услуги*</label>
+                                <input class="form-control" type="text">
+                           </div>
+                          <div class="form-group">
+                                <label for="inputdefault">Мобильное приложение, через которое оказываются услуги:</label>
+                                <input class="form-control" type="text">
+                         </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                               <label for="inputsm">Сайт организации в сети «Интернет»</label>
+                               <input class="form-control" type="text">
+                           </div>
+                          <div class="form-group">
+                          </div>
+                        </div>         
+                   </div>
+                   <h2>Сведения об уполномоченном лице</h2> 
+                    <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group">
+                                <label for="inputsm">Фамилия (в русской транскрипции)*</label>
+                                <input class="form-control" type="text">
+                           </div>
+                          <div class="form-group">
+                                <label for="inputdefault">Отчество (при наличии, в русской транскрипции)</label>
+                                <input class="form-control" type="text">
+                         </div>
+                         <div class="form-group">
+                            <label for="inputdefault">Фамилия (в латинской транскрипции)*</label>
+                            <input class="form-control" type="text">
+                         </div>
+                         <div class="form-group">
+                            <label for="inputdefault">Отчество (при наличии, в латинской транскрипции)</label>
+                            <input class="form-control" type="text">
+                         </div>
+                         <div class="form-group">
+                            <label for="inputdefault">Email:</label>
+                            <input class="form-control" type="text">
+                         </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                               <label for="inputsm">Имя (в русской транскрипции)*</label>
+                               <input class="form-control" type="text">
+                           </div>
+                           <div class="form-group"> 
+                                <label for="inputsm">Имя (в русской транскрипции)*</label>
+                                <input class="form-control" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputsm">Имя (в латинской транскрипции)*</label>
+                                <input class="form-control" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputsm">Имя (в русской транскрипции)*</label>
+                                <input class="form-control" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputsm">Номер контактного номера:*</label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>         
+                   </div>
+                   <div class="form-group">
+                    <label for="exampleFormControlFile1">Прикрепить необходимые документы:*</label>
+                    <input type="file" class="form-control-file" value="Выбрать файл">
+                   </div>
+                </form>
+        </div>
+    </main>
+    <footer>
+        <div class="border-top">
+            <div class="container">
+                <div>
+                    <ul class="list-inline">
+                         <li class="list-inline-item">Политика конфиденциальности</li>
+                         <li class="list-inline-item">Антикоррупционная политика</li>
+                         <li class="list-inline-item">Лицензионное соглашение B2C</li>
+                         <li class="list-inline-item">Лицензионное соглашение B2B</li>
+                         <li class="list-inline-item">Юридическая информация</li>
+                         <li class="list-inline-item">Youtube</li>
+                     </ul>
+                </div>
+                <div>
+                    <ul class="list-inline">
+                         <li class="list-inline-item">Информация</li>
+                         <li class="list-inline-item">Подача заявлений</li>
+                         <li class="list-inline-item">Партнерам</li>
+                         <li class="list-inline-item">Перечень интернет-компаний</li>
+                         <li class="list-inline-item">Новости</li>
+                         <li class="list-inline-item">Часто задаваемые вопросы</li>
+                         <li class="list-inline-item">Задать вопрос</li>
+                         <li class="list-inline-item">Карта сайта</li>
+                         <li class="list-inline-item">Русский</li>
+                     </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
