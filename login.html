@@ -58,98 +58,31 @@
                 </div>
                 </div>
         </nav>
-        <nav class="navbar navbar-expand-sm navbar-light bg-light border-bottom box-shadow mb-3">
-            <div class="container">
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Информация</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Подача заявлений</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Перечень интернет-компаний</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Новости</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Часто задаваемые вопросы</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Контакты</a>
-                        </li>
-                    </ul>
-                </div>
-                </div>
-        </nav>
     </header>
     <main>
             <div class="container pb-3">
-                <div class="row">
-                    <div class="col-md-8">
-                        <h1>Перечень интернет-компаний</h1>
-                        <p>Список иностранных интернет-компаний, состоящих на учете в РФ в качестве налогоплательщиков НДС при оказании электронных услуг</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img class="img-fluid" src="/images/building.svg"/>
-                    </div>
+                    <div class="col-md-4 offset-md-4">
+                        <form class="form-group text-center" method="post">
+                            <h3>Вход в Личный кабинет</h3>
+                            <div class="form-group">
+                                <input type="text" placeholder="Введите ИНН" class="form-control"/>
+                            </div>
+                            <div class="form-group">
+                               <input type="password" placeholder="Введите пароль" class="form-control"/>
+                           </div>
+                           <div class="form-check">
+                               <input type="checkbox" class="form-check-input">
+                               <label class="form-check-label">Запомнить меня</label>
+                           </div>
+                           <div class="form-group">
+                               <input type="button" class="btn btn-info" value="Войти">
+                           </div>
+                           <div class="form-group">
+                               <p>Забыли логин или пароль?</p>
+                               <p>Нет учетной записи? Подать заявление</p>
+                           </div>
+                       </form>
                 </div>
-                <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">Полное наименование компании</th>
-                        <th scope="col">Страна регистрации (инкорпорации)</th>
-                        <th scope="col">Дата постановки на учет в качестве поставщика электронных услуг</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>"2GIS Aktobe" LLP<br/><span>Товарищество с ограниченной ответственностью 2Г</span></td>
-                        <td>KAZAKHSTAN<br/><span>КАЗАХСТАН</span></td>
-                        <td>03.08.2020</td>
-                      </tr>
-                      <tr>
-                        <td>"AluminTechno" Joint Limited Liability Company<br/><span>Совместное общество с ограниченной ответственнос...</span></td>
-                        <td>BELARUS<br/><span>БЕЛАРУСЬ</span></td>
-                        <td>17.03.2021</td>
-                      </tr>
-                      <tr>
-                        <td>"2GIS Aktobe" LLP<br/><span>Товарищество с ограниченной ответственностью 2Г</span></td>
-                        <td>KAZAKHSTAN<br/><span>КАЗАХСТАН</span></td>
-                        <td>03.08.2020</td>
-                      </tr>
-                      <tr>
-                        <td>"BRIGHTS DIGITAL COMMUNICATIONS" LIMITED LIA<br/><span>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬ...</span></td>
-                        <td>UKRAINE<br/><span>УКРАИНА</span></td>
-                        <td>10.04.2019</td>
-                      </tr>
-                      <tr>
-                        <td>"Brio Group" Limited liability company<br/><span>Товарищество с ограниченной ответственностью 2Г</span></td>
-                        <td>UZBEKISTAN<br/><span>УЗБЕКИСТАН</span></td>
-                        <td>20.05.2020</td>
-                      </tr>
-                      <tr>
-                        <td>"Center for technological development "Intellisense-<br/><span>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬ...</span></td>
-                        <td>UKRAINE<br/><span>УКРАИНА</span></td>
-                        <td>10.04.2019</td>
-                      </tr>
-                      <tr>
-                        <td>"CHOICE OF THE YEAR" LTD<br/><span>Общество с ограниченной ответственностью "Выбор г</span></td>
-                        <td>BELARUS<br/><span>УКРАИНА</span></td>
-                        <td>10.04.2019</td>
-                      </tr>
-                      <tr>
-                        <td>"BRIGHTS DIGITAL COMMUNICATIONS" LIMITED LIA<br/><span>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬ...</span></td>
-                        <td>UKRAINE<br/><span>БЕЛАРУСЬ</span></td>
-                        <td>02.06.2021</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <div class="border text-center">
-                        <h6>Всего записей: 3180</h6>
-                  </div>
             </div>
     </main>
     <footer>
